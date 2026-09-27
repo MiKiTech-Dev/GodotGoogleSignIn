@@ -235,7 +235,7 @@ class GodotGoogleSignIn(godot: Godot) : GodotPlugin(godot) {
                         val email = googleIdTokenCredential.id
                         val displayName = googleIdTokenCredential.displayName ?: ""
                         
-                        Log.d(TAG, "Sign-in successful: $email")
+                        Log.d(TAG, "Sign-in successful")
                         
                         // Emit success signal with ID token, email, and display name
                         emitSignal(signInSuccessSignal.name, idToken, email, displayName)
